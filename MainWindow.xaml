@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        <RichTextBox Height="270" Width="517" HorizontalAlignment="Left" Canvas.Top="39" VerticalAlignment="Center" Canvas.Left="116">
+        <RichTextBox Height="270" Width="517" HorizontalAlignment="Left" Canvas.Top="10" VerticalAlignment="Top" Canvas.Left="273">
             <FlowDocument>
                 <Paragraph>
                     <Run x:Name="rtbDisplay" Text=""/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
+        <ListBox x:Name="lboxNames" Height="166" Width="211" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="24" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbxColors" Canvas.Left="24" Canvas.Top="195" Width="211" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
     </Canvas>
 </Window>

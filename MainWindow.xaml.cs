@@ -39,6 +39,10 @@ namespace Prog_122_L9_ListBoxes_ComboBoxes
             Display(StudentsFavoriteColors);
             //Display(studenNames);
 
+            // listBox - Mames 
+            lboxNames.ItemsSource = studenNames;
+            cbxColors.ItemsSource = StudentsFavoriteColors;
+            // Combo Box - colors
         }//MainWindow
 
         public void preload()
